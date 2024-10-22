@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-function Footer({}: Props) {
+function Footer() {
   return (
     <footer className="absolute bottom-10 right-10">
       <div>Created using nextjs </div>

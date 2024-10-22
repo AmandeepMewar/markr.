@@ -1,9 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 
-type Props = {};
-
-function Navbar({}: Props) {
+function Navbar() {
   return (
     <nav className="flex ">
       <div className="pl-10">
