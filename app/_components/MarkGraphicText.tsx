@@ -1,8 +1,6 @@
-import React from "react";
-
 function MarkGraphicText() {
   return (
-    <h1 className=" bg-clip-text -z-10 leading-none text-transparent from-secondary-1 text-center to-primary-1 opacity-5 bg-gradient-to-r text-[22rem] font-extrabold">
+    <h1 className="-z-10 bg-gradient-to-r from-secondary-1 to-primary-1 bg-clip-text text-center text-[22rem] font-extrabold leading-none text-transparent opacity-5">
       MarkR.
     </h1>
   );

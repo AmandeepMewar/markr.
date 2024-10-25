@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { Changa } from "next/font/google";
+import Navbar from "./_components/Navbar";
+import "./globals.css";
 
 const changa = Changa({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${changa.className} bg-secondary-1 text-primary-1`}>
+        <Navbar />
         {children}
       </body>
     </html>

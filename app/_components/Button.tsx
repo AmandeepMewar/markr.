@@ -7,7 +7,7 @@ type Props = React.ComponentPropsWithoutRef<"button"> &
   };
 
 function Button({ children, href, className, ...props }: Props) {
-  const classes = `bg-tertiary-1 hover:bg-accent-1 transition-all px-8 py-3 text-xl rounded-lg ${className}`;
+  const classes = className ?  className : `flex justify-center items-center bg-tertiary-1 hover:bg-accent-1 transition-all px-8 py-3 text-xl rounded-lg`;
   if (href) {
     return (
       <Link href={href} className={classes}>
