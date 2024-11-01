@@ -1,3 +1,4 @@
+import { BookmarkPlus } from "lucide-react";
 import Button from "./Button";
 import Collection from "./Collection";
 
@@ -12,8 +13,9 @@ function Sidebar() {
         <Collection title="Medium" bookmarks={30} />
       </ul>
 
-      <Button className="fixed bottom-10 translate-x-1/2 rounded-2xl bg-tertiary-1 px-6 py-2 text-lg">
-        Add a mark
+      <Button className="fixed bottom-10 flex translate-x-1/2 items-center gap-2 rounded-2xl bg-tertiary-1 px-6 py-2 text-lg">
+        <BookmarkPlus className="h-5 w-5" />
+        <span>Add a mark</span>
       </Button>
     </aside>
   );
