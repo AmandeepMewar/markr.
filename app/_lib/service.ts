@@ -19,3 +19,22 @@ export async function getUser(email: string) {
 
   return data;
 }
+
+export async function getBookmarks(userId: string) {
+  const { data } = await supabase
+    .from("marks")
+    .select("*")
+    .eq("user_id", userId);
+
+  return data;
+}
+
+export async function getCollections(userId: string) {
+  const { data } = await supabase
+    .from("collections")
+    .select("*")
+    .eq("user_id", userId);
+
+  return data;
+}
+
