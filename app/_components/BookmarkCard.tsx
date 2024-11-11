@@ -7,7 +7,7 @@ type Props = {
 
 function BookmarkCard({ url, title }: Props) {
   return (
-    <div className="h-[18rem] w-[20rem] rounded-lg bg-tertiary-1 py-3">
+    <div className="h-[6rem] w-[20rem] rounded-lg bg-tertiary-1 py-3">
       <Link
         href={url}
         target="_blank"
