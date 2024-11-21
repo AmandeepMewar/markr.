@@ -9,12 +9,11 @@ import LinkButton from "./LinkButton";
 
 type Props = {
   title: string;
-  count: number;
   collection_id: string;
   user_id: string;
 };
 
-function CollectionCard({ title, count, collection_id, user_id }: Props) {
+function CollectionCard({ title, collection_id, user_id }: Props) {
   const [isEditing, setIsEditing] = useState(false);
   const [isPending, startTransition] = useTransition();
   const collection = title.replaceAll(" ", "-");
@@ -41,7 +40,6 @@ function CollectionCard({ title, count, collection_id, user_id }: Props) {
         >
           <div className="flex flex-col items-start">
             <h3 className="text-start text-2xl font-medium">{title}</h3>
-            <p className="text-accent-2">{count} marks</p>
           </div>
 
           <div

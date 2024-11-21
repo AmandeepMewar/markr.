@@ -23,7 +23,6 @@ function Collection({ collections, user_id }: Props) {
         {collections.map((collection, ind) => (
           <CollectionCard
             title={collection.collection}
-            count={collection.count}
             key={`${collection}-${ind}`}
             collection_id={collection.collection_id}
             user_id={collection.user_id}
