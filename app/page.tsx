@@ -1,4 +1,4 @@
-import Button from "./_components/Button";
+import LinkButton from "./_components/LinkButton";
 import MarkGraphicText from "./_components/MarkGraphicText";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
         </p>
       </div>
       <div className="mt-16">
-        <Button href="/marks">Get Started</Button>
+        <LinkButton href="/marks">Get Started</LinkButton>
       </div>
     </main>
   );
