@@ -9,7 +9,8 @@ const changa = Changa({
 });
 
 export const metadata: Metadata = {
-  title: "Markr.",
+  title: { template: "%s - Markr.", default: "Markr. - Your Bookmark Manager" },
+  description: "Markr. - Manage your bookmarks at one place.",
 };
 
 export default function RootLayout({
